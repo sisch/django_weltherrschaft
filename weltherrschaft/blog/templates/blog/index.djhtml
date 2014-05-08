@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<H1>Weltherrschaft</H1>
+
+{{ varvalue }}
+
+<ul>
+	{% for entry in entries %}
+		<li style="background-color: {{ entry.color }}"><h4>{{ entry.title }}</h4>
+		<p>{{ entry.text }} </p>
+		</li>
+	{% endfor %}
+</ul>
+
+<input type="color"> </input>
+</body>
+</html>
